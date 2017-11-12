@@ -1,0 +1,86 @@
+$base-font-color: #2E2E2E;
+$font-normal: HiraginoSans-W3;
+$font-bold: HiraginoSans-W6;
+
+html, body {
+	color: $base-font-color;
+	font-family: $font-normal;
+}
+
+
+/* header */
+h1,h2,h3,h4 {
+	font-family: $font-bold;
+}
+h1 {
+	font-size: 22px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 17px;
+}
+h4 {
+	font-size: 13px;
+}
+
+
+/* base CSS */
+.icon-base {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.link-base {
+	text-decoration: none;
+	display: inline-block;
+	color: $base-font-color;
+	font-size: 11px;
+}
+
+
+/* link */
+a.view-all {
+	@extend .link-base;
+	font-family: $font-bold;
+	padding: 14px 12px 14px 50px;
+	border-radius: 2px;
+	border: solid 1px #2e2e2e;
+}
+a.view-all:after {
+	@extend .icon-base;
+	content: "\f105";
+	margin-left: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #59bd5a;
+}
+
+a.read-more {
+	@extend .link-base;
+	padding: 8px 15px;
+	border-radius: 4px;
+	background-color: #262626;
+	color: #FFF;
+	font-weight: normal;
+}
+
+
+/* text */
+.price, .ask-price {
+	font-family: $font-bold;
+	font-size: 20px;
+	color: #BF0000;
+}
+.price span {
+	font-size: 15px;
+}
+.price-from:after {
+	content: '〜';
+	font-size: 15px;
+}
+
